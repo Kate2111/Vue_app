@@ -1,27 +1,24 @@
 <template>
     <div class="app">
-        <form>
-            <h4>Создание поста</h4>       
-            <input class="input" type="text" placeholder="Название">
-            <input class="input" type="text" placeholder="Описание">
-            <button class="btn">Создать</button>
-        </form>
-        <div class="post" v-for="post in posts">
-            <div>
-                <strong>Название:</strong> {{ post.title }}
-            </div>
-            <div>
-                <strong>Описание:</strong> {{ post.body }}
-            </div>
-            
-        </div>
+        <post-form @create="createPost"/>
+        <post-list :posts="posts"/>
+        <practice-book/>
+       
+        
     </div>
     
 </template>
 
 
 <script>
+    import PostForm from './components/PostForm';
+    import PostList from './components/PostList';
+    import PracticeBook from './components/PracticeBook'
+
     export default {
+        components: {
+            PostList, PostForm, PracticeBook
+        },
         data() {
             return {
                 posts: [
@@ -32,7 +29,9 @@
             }
         }, 
         methods: {
-            
+            createPost(post) {
+                this.posts.push(post);
+            },
         },
     }
 </script>
@@ -50,33 +49,4 @@
         margin-top: 15px;
         padding: 15px;
     }
-
-    .post{
-        border: 2px solid green;
-        margin-top: 15px;
-        padding: 15px;
-    }
-    
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .input {
-        width: 100%;
-        border: 1px solid green;
-        margin-top: 15px;
-        padding: 10px 15px;
-    }
-
-    .btn {
-        align-self: flex-end;
-        margin-top: 15px;
-        background: none;
-        padding: 10px 15px;
-        color: green;
-        border: 1px solid green;
-    }
-
-
 </style>
