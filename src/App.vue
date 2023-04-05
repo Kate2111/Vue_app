@@ -3,7 +3,6 @@
         <post-form @create="createPost"/>
         <post-list :posts="posts"/>
         <practice-book/>
-       
         
     </div>
     
@@ -11,10 +10,10 @@
 
 
 <script>
-    import PostForm from './components/PostForm';
-    import PostList from './components/PostList';
-    import PracticeBook from './components/PracticeBook'
-
+    import PostForm from './components/post/PostForm.vue';
+    import PostList from './components/post/PostList.vue';
+    import PracticeBook from './components/practice/PracticeBook.vue'
+    
     export default {
         components: {
             PostList, PostForm, PracticeBook
