@@ -8,6 +8,7 @@
 
 <script>
 export default {
+    name: 'task2', 
     data() {
         return {
             arr: [1, 2, 3],

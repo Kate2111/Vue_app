@@ -12,6 +12,7 @@
 
 <script>
 export default {
+    name: 'task7', 
     data() {
         return {
             number: [2, 3]

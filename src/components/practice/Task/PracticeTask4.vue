@@ -10,6 +10,7 @@
 
 <script>
 export default {
+    name: 'task4', 
     methods: {
         showDate: function () {
             alert((new Date).getDate() + '.' + ((new Date).getMonth()+1) + '.' + (new Date).getFullYear());

@@ -11,6 +11,7 @@
 
 <script>
 export default {
+    name: 'task5', 
     data() {
         return {
             num1: 3,

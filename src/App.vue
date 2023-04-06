@@ -44,7 +44,7 @@
     }
 
     .app {
-        width: 500px;
+        width: 650px;
         margin-top: 15px;
         padding: 15px;
     }

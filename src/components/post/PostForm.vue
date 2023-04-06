@@ -11,14 +11,11 @@
             class="input" 
             type="text" 
             placeholder="Описание">
-        <button 
-            class="btn" 
-            @click="createPost"
-            >
-            Создать
-        </button>
+        
+        <my-button class="btn" @click="createPost"> Создать</my-button>    
     </form>
 </template>
+
 
 <script>
     export default {
@@ -59,9 +56,6 @@
     .btn {
         align-self: flex-end;
         margin-top: 15px;
-        background: none;
-        padding: 10px 15px;
-        color: green;
-        border: 1px solid green;
+        margin-right: 17px;
     }
 </style>

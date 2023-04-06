@@ -9,6 +9,7 @@
 
 <script>
 export default {
+    name: 'task1', 
     data() {
         return {
             arr: ['x', 'y', 'z'],

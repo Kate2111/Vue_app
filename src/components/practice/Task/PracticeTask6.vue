@@ -11,6 +11,7 @@
 
 <script>
 export default {
+    name: 'task6', 
     data() {
         return {
             days: {

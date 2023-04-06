@@ -8,6 +8,7 @@
 
 <script>
 export default {
+    name: 'task3', 
     data() {
         return {
             obj: {x: 4, y: 5, z: 6},

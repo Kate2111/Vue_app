@@ -12,6 +12,7 @@
 
 <script>
 export default {
+    name: 'task8', 
     data() {
         return {
             text: 'Привет'
