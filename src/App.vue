@@ -12,7 +12,8 @@
 <script>
     import PostForm from './components/post/PostForm.vue';
     import PostList from './components/post/PostList.vue';
-    import PracticeBook from './components/practice/PracticeBook.vue'
+    import PracticeBook from './components/practice/PracticeBook.vue';
+   
     
     export default {
         components: {

@@ -1,7 +1,8 @@
 import { createApp } from 'vue';
 import App from './App';
 import components from '@/components/post/UI';
-import tasks from '@/components/practice/Task'
+import tasks from '@/components/practice/Task';
+
 
 const app = createApp(App);
 
