@@ -16,6 +16,11 @@
         <task14></task14>
         <task15></task15>
         <task16></task16>
+        <task17></task17>
+        <task18></task18>
+        <task19></task19>
+        <task20></task20>
+        <task21></task21>
     </div>
 </template>
 
