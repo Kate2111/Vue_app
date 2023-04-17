@@ -21,6 +21,15 @@
         <task19></task19>
         <task20></task20>
         <task21></task21>
+        <task22></task22>
+        <task23></task23>
+        <task24></task24>
+        <task25></task25>
+        <task26></task26>
+        <task27></task27>
+        <task28></task28>
+        <task29></task29>
+        <task30></task30>
     </div>
 </template>
 
