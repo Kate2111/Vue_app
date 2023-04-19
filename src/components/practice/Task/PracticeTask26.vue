@@ -22,8 +22,8 @@
 
         <div class="wrapper">
             <p>Дан следующий объект с CSS классами: {color: true, 'font-size': false}. Примените данный объект к какому-нибудь тегу.</p>
-            <p :class="{color: true, 'font-size': false}">text</p>
-            <button @click="editFontSize">click</button>
+            <p :class="{color: false, backgroundColor: false}">text</p>
+            <button>click</button>
         </div>
 
         <div class="wrapper">
@@ -64,8 +64,12 @@ export default {
        toggleText: function() {
         this.p3.toggle = !this.p3.toggle;
        },
+       editColor: function() {
+
+       },
        editFontSize: function() {
-        
+        this.isColor = !this.isColor;
+        this.isSize = !this.isSize;
        }
     }
 }
@@ -96,6 +100,10 @@ export default {
 
 .font-size{
     font-size: 30px;
+}
+
+.backgroundColor{
+    background-color: darkkhaki;
 }
 
 </style>

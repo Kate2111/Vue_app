@@ -28,6 +28,13 @@ import PracticeTask27 from '@/components/practice/Task/PracticeTask27';
 import PracticeTask28 from '@/components/practice/Task/PracticeTask28'; 
 import PracticeTask29 from '@/components/practice/Task/PracticeTask29'; 
 import PracticeTask30 from '@/components/practice/Task/PracticeTask30'; 
+import PracticeTask31 from '@/components/practice/Task/PracticeTask31';
+import PracticeTask32 from '@/components/practice/Task/PracticeTask32';
+import PracticeTask33 from '@/components/practice/Task/PracticeTask33';
+import PracticeTask34 from '@/components/practice/Task/PracticeTask34';
+import PracticeTask35 from '@/components/practice/Task/PracticeTask35';
+import PracticeTask36 from '@/components/practice/Task/PracticeTask36';
+
 
 export default [
     PracticeTask1, PracticeTask2, PracticeTask3,
@@ -39,5 +46,7 @@ export default [
         PracticeTask19, PracticeTask20, PracticeTask21,
         PracticeTask22, PracticeTask23, PracticeTask24,
         PracticeTask25, PracticeTask26, PracticeTask27,
-        PracticeTask28, PracticeTask29, PracticeTask30
+        PracticeTask28, PracticeTask29, PracticeTask30,
+        PracticeTask31, PracticeTask32, PracticeTask33,
+        PracticeTask34, PracticeTask35, PracticeTask36
 ]
