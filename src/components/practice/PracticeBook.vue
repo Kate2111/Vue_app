@@ -37,6 +37,13 @@
         <task34></task34>
         <task35></task35>
         <task36></task36>
+        <task37></task37>
+        <task38></task38>
+        <task39></task39>
+        <task40></task40>
+        <task41></task41>
+        <task42></task42>
+        <task43></task43>
     </div>
 </template>
 

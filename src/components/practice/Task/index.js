@@ -34,19 +34,29 @@ import PracticeTask33 from '@/components/practice/Task/PracticeTask33';
 import PracticeTask34 from '@/components/practice/Task/PracticeTask34';
 import PracticeTask35 from '@/components/practice/Task/PracticeTask35';
 import PracticeTask36 from '@/components/practice/Task/PracticeTask36';
+import PracticeTask37 from '@/components/practice/Task/PracticeTask37';
+import PracticeTask38 from '@/components/practice/Task/PracticeTask38';
+import PracticeTask39 from '@/components/practice/Task/PracticeTask39';
+import PracticeTask40 from '@/components/practice/Task/PracticeTask40';
+import PracticeTask41 from '@/components/practice/Task/PracticeTask41';
+import PracticeTask42 from '@/components/practice/Task/PracticeTask42';
+import PracticeTask43 from '@/components/practice/Task/PracticeTask43';
 
 
 export default [
     PracticeTask1, PracticeTask2, PracticeTask3,
-        PracticeTask4, PracticeTask5,PracticeTask6,
-        PracticeTask7, PracticeTask8, PracticeTask9,
-        PracticeTask10, PracticeTask11, PracticeTask12,
-        PracticeTask13, PracticeTask14, PracticeTask15, 
-        PracticeTask16, PracticeTask17, PracticeTask18, 
-        PracticeTask19, PracticeTask20, PracticeTask21,
-        PracticeTask22, PracticeTask23, PracticeTask24,
-        PracticeTask25, PracticeTask26, PracticeTask27,
-        PracticeTask28, PracticeTask29, PracticeTask30,
-        PracticeTask31, PracticeTask32, PracticeTask33,
-        PracticeTask34, PracticeTask35, PracticeTask36
+    PracticeTask4, PracticeTask5,PracticeTask6,
+    PracticeTask7, PracticeTask8, PracticeTask9,
+    PracticeTask10, PracticeTask11, PracticeTask12,
+    PracticeTask13, PracticeTask14, PracticeTask15, 
+    PracticeTask16, PracticeTask17, PracticeTask18, 
+    PracticeTask19, PracticeTask20, PracticeTask21,
+    PracticeTask22, PracticeTask23, PracticeTask24,
+    PracticeTask25, PracticeTask26, PracticeTask27,
+    PracticeTask28, PracticeTask29, PracticeTask30,
+    PracticeTask31, PracticeTask32, PracticeTask33,
+    PracticeTask34, PracticeTask35, PracticeTask36,
+    PracticeTask37, PracticeTask38, PracticeTask39,
+    PracticeTask40, PracticeTask41, PracticeTask42,
+    PracticeTask43
 ]
