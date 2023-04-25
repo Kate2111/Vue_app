@@ -4,30 +4,30 @@
 
         <div class="wrapper">
             <h4 class="header">28.1 Дан инпут. Дана кнопка. Дан абзац. В инпут вводится число. Сделайте так, чтобы по нажатию на кнопку абзаце появился квадратный корень этого числа.</h4>
-            <input type="number" v-model="task1.num">
+            <input type="number" v-model="task1.num" placeholder="Введите число">
             <p>{{task1.res}}</p>
             <button @click="getPow">click</button>
         </div>
         
         <div class="wrapper">
             <h4 class="header">28.2  Даны два инпута. Дана кнопка. Дан абзац. В каждый инпут вводятся числа. Сделайте так, чтобы по нажатию на кнопку в абзаце появилась сумма этих чисел.</h4>
-            <input type="number" v-model="task2.num1">
-            <input type="number" v-model="task2.num2">
+            <input type="number" v-model="task2.num1" placeholder="Введите число">
+            <input type="number" v-model="task2.num2" placeholder="Введите число">
             <p>{{task2.sum}}</p>
             <button @click="getSum">click</button>
         </div>
 
         <div class="wrapper">
             <h4 class="header">28.3  Даны два инпута. Дана кнопка. В каждый инпут вводится какой-то текст. Сделайте так, чтобы по нажатию на кнопку текст первого инпута стал во втором и наоборот.</h4>
-            <input v-model="task3.text1">
-            <input v-model="task3.text2">
+            <input v-model="task3.text1" placeholder="Введите текст">
+            <input v-model="task3.text2" placeholder="Введите текст">
             <button @click="getText">click</button>
         </div>
 
 
         <div class="wrapper">
             <h4 class="header">28.4  Дан инпут, 3 абзаца и кнопка. В инпут вводится ФИО пользователя через пробел. Сделайте так, чтобы по нажатию на кнопку в первом абзаце появилась фамилия пользователя, во втором - имя, а в третьем - отчество.</h4>
-            <input class="fullName" type="text" v-model="task4.name" @click="task4.name = ''">
+            <input class="fullName" type="text" v-model="task4.name" @click="task4.name = ''" placeholder="Введите ФИО">
             <p :class="{color: isColor}">{{task4.surname}}</p>
             <p :class="{color: isColor}">{{task4.firstname}}</p>
             <p :class="{color: isColor}">{{task4.lastname}}</p>

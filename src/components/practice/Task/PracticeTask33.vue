@@ -2,7 +2,7 @@
     <div class="task34 border">
         <h4 class="header">33.1 Спросите у пользователя с помощью селекта в каком городе он живет. Сделайте так, чтобы выбранный город вывелся в абзаце под селектом.</h4>
         
-        <select v-model="selected">
+        <select v-model="selected" title="города">
             <option value="">Выберите город</option>
             <option >Москва</option>
             <option>Находка</option>
@@ -13,19 +13,19 @@
 
 
         <h4 class="header">33.2 Сделайте селект, с помощью которого можно будет выбрать название дня недели.</h4>
-        <select v-model="selected1">
+        <select v-model="selected1" title="week">
             <option v-for="option in options">{{option}}</option>
         </select>
         <p>Сегодня {{ selected1 }}</p>
 
         <h4 class="header">32.3 Сделайте три селекта, с помощью которых можно будет выбрать день, месяц и год.</h4>
-        <select v-model="selectedDay">
+        <select v-model="selectedDay" title="day">
             <option v-for="day in 31">{{day}}</option>
         </select>
-        <select v-model="selectedMonth">
+        <select v-model="selectedMonth" title="month">
             <option v-for="(month, index) in months" :value="index">{{month}}</option>
         </select>
-        <select v-model="selectedYear">
+        <select v-model="selectedYear" title="year">
             <option v-for="year in years">{{year}}</option>
         </select>
         <p>Какой сегодня день? {{selectedDay}} {{months[selectedMonth]}} {{selectedYear}} год</p>

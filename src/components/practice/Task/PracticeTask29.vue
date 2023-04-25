@@ -3,7 +3,7 @@
         <h4 class="header">29. Дан текстареа и кнопка. В текстареа вводится текст. По нажатию на кнопку получите массив введенных в текстареа слов и выведите элементы этого массива в виде списка ul.</h4>
         
         <div class="wrapper">
-            <textarea cols="30" rows="5" v-model="text"></textarea>
+            <textarea cols="30" rows="5" v-model="text" placeholder="Введите текст"></textarea>
             <button @click="getList">получить список</button>
             <ul>
                 <li v-for="elem in arr">{{elem}}</li>

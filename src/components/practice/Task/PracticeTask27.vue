@@ -4,13 +4,13 @@
         
         <div class="wrapper">
             <h4 class="header">27.1. Дан инпут. Сделайте так, чтобы вводимый в инпут текст сразу выводился в верхнем регистре в абзаце под ним.</h4>
-            <input v-model="text">
+            <input v-model="text" placeholder="Введите текст">
             <p>{{ text.toLocaleUpperCase() }}</p>
         </div>
         
         <div class="wrapper">
             <h4 class="header">27.2. Дан инпут. Пусть в него вводится число. Сделайте так, чтобы в абзаце по мере ввода выводился квадрат вводимого числа.</h4>
-            <input type="number" v-model="number">
+            <input type="number" v-model="number" placeholder="Введите текст">
             <p>{{ Math.pow(Number(number), 2) }}</p>
         </div>
 

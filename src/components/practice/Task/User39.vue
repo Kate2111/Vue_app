@@ -1,12 +1,12 @@
 <template>
     <div>
-        <!-- Выводим данные из пропса name -->
-        <ul> {{ name }}
-            <!-- С помощью цикла выводим данные из пропса week -->
-            <li v-for="elem in week">{{elem}}</li>
-        </ul>
-        <!-- Выводим данные из пропса question -->
-        {{ question }}
+       <table>
+        <tr>
+            <td>{{name}}</td>
+            <td>{{salary}}</td>
+            <td>{{age}}</td>
+        </tr>
+       </table>
     </div>
 </template>
 
@@ -14,10 +14,18 @@
 export default {
     //атрибуты которые передает от родителя
     props: {
-        name: String,
-        week: Array,
-        question: String,
+       name: String,
+       salary: Number,
+       age: Number,
     },
+    data() {
+        return{
+           
+        }
+    },
+    methods: {
+
+    }
     
     //Необходимо указывать тип входного параметра
     //Имя пропса: его тип
@@ -30,15 +38,14 @@ export default {
         callback: Function,
         contactsPromise: Promise 
     } */
-    
-    data () {
-        return {
-            
-        }
-    }
 }
 </script>
 
 <style>
-
+td {
+    border: solid 1px black;
+    min-width: 70px;
+    height: 30px;
+    padding: 3px 10px;
+}
 </style>

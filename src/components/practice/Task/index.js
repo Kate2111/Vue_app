@@ -59,4 +59,4 @@ export default [
     PracticeTask37, PracticeTask38, PracticeTask39,
     PracticeTask40, PracticeTask41, PracticeTask42,
     PracticeTask43
-]
+];

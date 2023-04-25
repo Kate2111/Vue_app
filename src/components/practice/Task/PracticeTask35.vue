@@ -1,7 +1,7 @@
 <template>
     <div class="task35 border">
         <h3 class="header">35.1 Дан инпут. В этот инпут вводится текст. Сделайте так, чтобы по нажатию на клавишу Enter введенный текст появился в абзаце под инпутом. </h3>
-        <input @keyup.enter="showText(1)" v-model="content">
+        <input @keyup.enter="showText(1)" v-model="content" placeholder="Введите текст">
         <p v-if="visible[1]">{{content}}</p>
 
         <h3 class="header">35.2 Дана ссылка. Сделайте так, чтобы по клику на эту ссылку, если в этот момент зажата клавиша Ctrl, в абзац под ссылкой вывелся какой-нибудь текст.</h3>
