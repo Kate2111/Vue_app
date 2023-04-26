@@ -1,12 +1,21 @@
 <template>
     <div>
         <ul>
-            <li>
-                Имя: {{ name }}, возраст: {{ age }}, запралата: {{ salary }}
+            <li v-if="!isEdit">
+                Имя: {{ newName }}, возраст: {{ newAge }}, запралата: {{ newSalary }}
+                <button @click="handler">info_console</button>
+                <button @click="$emit('remove', id)">del</button>
+                <button @click="edit">edit</button>
+            </li>
+            <li v-else>
+                <input type="text" v-model="newName">
+                <input type="text" v-model="newAge">
+                <input type="text" v-model="newSalary">
+                <button @click="handler">info_console</button>
+                <button @click="$emit('remove', id)">del</button>
+                <button @click="save">save</button>
             </li>
         </ul>
-      <button @click="handler">click</button>
-      <!-- <button @click="$emit('show', 'kate')">click</button> -->
     </div>
 </template>
 
@@ -14,18 +23,29 @@
 export default {
     //атрибуты которые передает от родителя
     props: {
-       name: String,
-       salary: Number,
-       age: Number,
+        id: Number,
+        name: String,
+        salary: Number,
+        age: Number,
     },
     data() {
         return{
-
+            isEdit: false,
+            newName: this.name,
+            newAge: this.age,
+            newSalary: this.salary,
         }
     },
     methods: {
         handler() {
             this.$emit('show', this.name, this.age, this.salary)
+        },
+        edit() {
+            this.isEdit = true;
+        },
+        save(){
+            this.isEdit = false;
+            this.$emit('edit', this.id, this.newName, this.newAge, this.newSalary)
         }
     }
     
@@ -44,11 +64,9 @@ export default {
 </script>
 
 <style>
-td {
-    border: solid 1px black;
-    min-width: 70px;
-    height: 30px;
-    padding: 3px 10px;
+button{
+    padding: 2px 10px;
+    margin-left: 5px;
 }
 
 .fontColor{

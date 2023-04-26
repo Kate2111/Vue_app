@@ -1,26 +1,33 @@
 <template>
     <div class="task40 border">
-        <h3 class="header">40 Испускание событий в Vue. Передайте в дочерний компонент две функции. Сделайте в компоненте с работником кнопку, по нажатию на которую в родительский компонент будет передаваться имя и зарплата работника.</h3>
+        <h3 class="header">40 Испускание событий в Vue. Сделайте в компоненте с работником кнопку, по нажатию на которую в родительский компонент будет передаваться имя и зарплата работника. Сделайте в каждом компоненте кнопку для его удаления</h3>
+        <UserForm
+            @addUser="addUser"
+        />
+
         <User 
             v-for="user in users" 
+            :id="user.id"
             :name="user.name"
             :salary="user.salary"
             :age="user.age"
             :key="user.id"
-            :color="color"
             @show="showInfo"
+            @remove="remove"
+            @edit="edit"
         />
 
     </div>
 </template>
 
 <script>
-import User from './User40.vue'
+import UserForm from './UserForm40.vue';
+import User from './User40.vue';
 
 export default {
     name: 'task40',
-    components: {User},
-    emits: ['show'],
+    components: {UserForm, User},
+    emits: ['addUser', 'show', 'remove', 'edit'],
     data() {
         return {
             users: [
@@ -47,9 +54,34 @@ export default {
         }
     },
     methods: {
-       showInfo(name, age, salary) {
-        alert(name, age, salary);  
-       }
+        addUser(name, salary, age) {
+            let id = this.users.length + 1;
+
+            this.users.push({
+                id,
+                name,
+                salary,
+                age
+            })
+        },
+        showInfo(name, age, salary) {
+            console.log(name, age, salary)
+        },
+        remove(index) {
+            this.users = this.users.filter(user => {
+                return user.id !== index;
+            })
+        },
+        edit(index, name, salary, age) {
+            this.users = this.users.map(user => {
+                if(user.id === index) {
+                    this.name = name;
+                    this.salary = salary;
+                    this.age = age; 
+                }
+                return user;
+            })
+        }
     }
 }
 </script>
