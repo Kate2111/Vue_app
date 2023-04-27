@@ -1,7 +1,7 @@
 <template>
     <div>
-        <input v-model="newTask" type="text" placeholder="Введите задачу">
-        <button @click="add">add</button>
+        <input class="newTask" v-model="newTask" type="text" placeholder="Введите задачу">
+        <button class="add" @click="add" @keyup.enter="add">add</button>
     </div>
 </template>
 
@@ -28,10 +28,20 @@ export default {
 </script>
 
 <style>
-button{
+.add{
     padding: 2px 10px;
-    margin-left: 5px;
+    height: 30px;
+    background-color:rgba(0, 128, 0, 0.5);
+    border: none;
+    margin: 0;
 }
 
+.newTask{
+    width: 200px;
+    height: 30px;
+    padding: 2px 10px;
+    margin: 10px 0;
+    border: solid 1px rgba(0, 128, 0, 0.5);
+}
 
 </style>

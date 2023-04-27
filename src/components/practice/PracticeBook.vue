@@ -30,7 +30,6 @@
         <task28></task28>
         <task29></task29>
         <task30></task30>
-        <task30></task30>
         <task31></task31>
         <task32></task32>
         <task33></task33>

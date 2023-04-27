@@ -5,24 +5,25 @@
 
         <newTask @save="save"/>
 
-        <ul>
-            <li v-for="task in listTask">
-                <label>
-                    <input type="checkbox" placeholder="checkbox">
-                </label>
-                {{ task }}
-            </li>
-        </ul>
+        <showTask 
+            v-for="(task, index) in listTask"
+            :task="task"
+            :index="index"
+            :key="index"
+            @remove="removeElem"
+            @edit="editElem"
+        />
 
     </div>
 </template>
 
 <script>
-import newTask from './UserTask41.vue'
+import newTask from './UserNewTask41.vue';
+import showTask from './UserShowTask41.vue';
 
 export default {
     name: 'task41', 
-    components: {newTask},
+    components: {newTask, showTask},
     data() {
         return {
             listTask: [],
@@ -31,7 +32,18 @@ export default {
     methods: {
        save(newTask) {
         this.listTask.push(newTask);
-       }
+       },
+       removeElem(id){
+        this.listTask.splice(id, 1);
+       },
+       editElem(id, newTask){
+        this.listTask = this.listTask.map((task,  i) => {
+            if(i == id) {
+                this.task = newTask;
+            }
+            return task;
+        })
+       },
     }
 }
 </script>
@@ -44,5 +56,6 @@ export default {
 ul{
     list-style-type: none;
 }
+
 
 </style>
