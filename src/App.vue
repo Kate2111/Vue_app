@@ -1,7 +1,20 @@
 <template>
     <div class="app">
-        <post-form @create="createPost"/>
-        <post-list :posts="posts"/>
+        <h1>Список постов</h1>
+        <my-button @click="featchPosts">получить посты</my-button>
+        <my-button class="showBtn" @click="showDialog">
+            Создать пост
+        </my-button>
+        <my-dialog v-model:show="dialogVisible">
+            <post-form @create="createPost"/>
+        </my-dialog>
+        <post-list 
+            :posts="posts"
+            @remove="removeItem" 
+        />
+
+
+
         <practice-book/>
         
     </div>
@@ -13,7 +26,7 @@
     import PostForm from './components/post/PostForm.vue';
     import PostList from './components/post/PostList.vue';
     import PracticeBook from './components/practice/PracticeBook.vue';
-   
+    import axios from 'axios';
     
     export default {
         components: {
@@ -26,12 +39,29 @@
                     {id:2, title: 'HTML', body: 'Описание 2'},
                     {id:3, title: 'CSS', body: 'Описание 3'},
                 ],
+                dialogVisible:false,
             }
         }, 
         methods: {
             createPost(post) {
                 this.posts.push(post);
+                this.dialogVisible = false;
             },
+            removeItem(post) {
+                this.posts = this.posts.filter(elem => elem.id != post.id)
+            },
+            showDialog() {
+                this.dialogVisible = true;
+            },
+            async featchPosts() {
+                try{
+                    const response = await axios.get('https://my-json-server.typicode.com/typicode/demo/posts');
+                    console.log(response);
+                } catch(e) {
+                    alert('error')
+                }
+            }
+
         },
     }
 </script>
@@ -48,5 +78,9 @@
         width: 650px;
         margin-top: 15px;
         padding: 15px;
+    }
+
+    .showBtn{
+        margin: 15px 0;
     }
 </style>

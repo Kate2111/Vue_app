@@ -1,0 +1,6 @@
+{"posts": [
+    {"id":1, "title": "JS", "body": "Описание 1"},
+    {"id":2, "title": "HTML", "body": "Описание 2"},
+    {"id":3, "title": "CSS", "body": "Описание 3"}
+    ]
+}
