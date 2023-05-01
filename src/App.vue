@@ -1,17 +1,28 @@
 <template>
     <div class="app">
         <h1>Список постов</h1>
-        <my-button @click="featchPosts">получить посты</my-button>
-        <my-button class="showBtn" @click="showDialog">
-            Создать пост
-        </my-button>
+        <div class="menu">
+            <my-button class="showBtn" @click="showDialog">
+                Создать пост
+            </my-button>
+            <my-select 
+                v-model="selectedSort"
+                :options="sortOption"
+            >
+
+            </my-select>
+        </div>
+       
         <my-dialog v-model:show="dialogVisible">
             <post-form @create="createPost"/>
         </my-dialog>
+
         <post-list 
             :posts="posts"
             @remove="removeItem" 
+            v-if="!isLoading"
         />
+        <div v-else>Идет загрузка...</div>
 
 
 
@@ -34,12 +45,14 @@
         },
         data() {
             return {
-                posts: [
-                    {id:1, title: 'JS', body: 'Описание 1'},
-                    {id:2, title: 'HTML', body: 'Описание 2'},
-                    {id:3, title: 'CSS', body: 'Описание 3'},
-                ],
+                posts: [],
                 dialogVisible:false,
+                isLoading: false,
+                selectedSort: '',
+                sortOption: [
+                    {value: 'title', name: 'По названию'},
+                    {value: 'body', name: 'По содержимому'},
+                ]
             }
         }, 
         methods: {
@@ -54,15 +67,28 @@
                 this.dialogVisible = true;
             },
             async featchPosts() {
+                this.isLoading = true;
                 try{
-                    const response = await axios.get('https://my-json-server.typicode.com/typicode/demo/posts');
-                    console.log(response);
+                    const response = await axios.get('https://my-json-server.typicode.com/Kate2111/Vue_app/posts');
+                    this.posts = response.data;                 
                 } catch(e) {
                     alert('error')
+                } finally{
+                    this.isLoading = false;
                 }
             }
 
         },
+        mounted() {
+            this.featchPosts()
+        },
+        watch: {
+            selectedSort(newvalue) {
+                this.posts.sort((post1, post2)=> {
+                    return post1[newvalue]?.localeCompare(post2[newvalue]);
+                })
+            }
+        }
     }
 </script>
 
@@ -80,7 +106,10 @@
         padding: 15px;
     }
 
-    .showBtn{
+    .menu{
+        display: flex;
+        justify-content: space-between;
         margin: 15px 0;
     }
+
 </style>
