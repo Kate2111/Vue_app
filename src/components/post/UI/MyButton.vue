@@ -16,5 +16,6 @@ export default {
         padding: 10px 15px;
         color: green;
         border: 1px solid green;
+        margin: 0;
     }
 </style>

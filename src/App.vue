@@ -1,6 +1,11 @@
 <template>
     <div class="app">
         <h1>Список постов</h1>
+        <my-input
+            v-model="searchQuery"
+            placeholder="поиск...">
+
+        </my-input>
         <div class="menu">
             <my-button class="showBtn" @click="showDialog">
                 Создать пост
@@ -18,7 +23,7 @@
         </my-dialog>
 
         <post-list 
-            :posts="posts"
+            :posts="sortedAndSearchedPost"
             @remove="removeItem" 
             v-if="!isLoading"
         />
@@ -48,6 +53,7 @@
                 posts: [],
                 dialogVisible:false,
                 isLoading: false,
+                searchQuery: '',
                 selectedSort: '',
                 sortOption: [
                     {value: 'title', name: 'По названию'},
@@ -82,13 +88,23 @@
         mounted() {
             this.featchPosts()
         },
-        watch: {
+        computed: {
+            sortedPost() {
+                return [...this.posts].sort((post1, post2)=> {
+                    return post1[this.selectedSort]?.localeCompare(post2[this.selectedSort]);
+                })
+            },
+            sortedAndSearchedPost() {
+                return this.sortedPost.filter(post => post.title.toLowerCase().includes(this.searchQuery.toLowerCase()))
+            }
+        },
+        /* watch: {
             selectedSort(newvalue) {
                 this.posts.sort((post1, post2)=> {
                     return post1[newvalue]?.localeCompare(post2[newvalue]);
                 })
             }
-        }
+        } */
     }
 </script>
 
