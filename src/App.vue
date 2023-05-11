@@ -28,7 +28,7 @@
             v-if="!isLoading"
         />
         <div v-else>Идет загрузка...</div>
-
+        
 
 
         <practice-book/>
@@ -55,6 +55,8 @@
                 isLoading: false,
                 searchQuery: '',
                 selectedSort: '',
+                page: 1,
+                limit: 5,
                 sortOption: [
                     {value: 'title', name: 'По названию'},
                     {value: 'body', name: 'По содержимому'},
@@ -75,7 +77,13 @@
             async featchPosts() {
                 this.isLoading = true;
                 try{
-                    const response = await axios.get('https://my-json-server.typicode.com/Kate2111/Vue_app/posts');
+                    const response = await axios.get('https://my-json-server.typicode.com/Kate2111/Vue_app/posts', {
+                        params:{
+                            _page: this.page,
+                            _limit: this.limit
+                        }
+                    });
+                    this.totalPages = Math.ceil( response.headers['x-total-count'] / this.limit);
                     this.posts = response.data;                 
                 } catch(e) {
                     alert('error')
