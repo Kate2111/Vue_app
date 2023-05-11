@@ -1,22 +1,115 @@
-{"posts": [
-    {"id":1, "title": "JS", "body": "Описание 1"},
-    {"id":2, "title": "HTML", "body": "Описание 2"},
-    {"id":3, "title": "CSS", "body": "Описание 3"},
-    {"id":4, "title": "CSS", "body": "Описание 4"},
-    {"id":5, "title": "CSS", "body": "Описание 5"},
-    {"id":6, "title": "CSS", "body": "Описание 6"},
-    {"id":7, "title": "CSS", "body": "Описание 7"},
-    {"id":8, "title": "CSS", "body": "Описание 8"},
-    {"id":9, "title": "CSS", "body": "Описание 9"},
-    {"id":10, "title": "CSS", "body": "Описание 10"},
-    {"id":11, "title": "CSS", "body": "Описание 11"},
-    {"id":12, "title": "CSS", "body": "Описание 12"},
-    {"id":13, "title": "CSS", "body": "Описание 13"},
-    {"id":14, "title": "CSS", "body": "Описание 14"},
-    {"id":15, "title": "CSS", "body": "Описание 15"},
-    {"id":16, "title": "CSS", "body": "Описание 16"},
-    {"id":17, "title": "CSS", "body": "Описание 17"},
-    {"id":18, "title": "CSS", "body": "Описание 18"},
-    {"id":19, "title": "CSS", "body": "Описание 18"}
+{"meals": [
+    {   "id":1, 
+        "title": "Grilled eggplant with coconut milk", 
+        "Ingredients": "6 Egg Plants, 1 can Coconut Milk, 1 tbs Lemon Juice ,1 tsp Salt, To taste Red Pepper Flakes, 4 Sticks Onions", 
+        "more": {
+            "1": "Prepare the eggplants for grilling by pricking them all over with a fork.This is so it won’t burst during the grilling process as the natural water in it heats up.",
+            "2": "Grill the eggplants, turning them over frequently to ensure even cooking. Grill until the skins are dark brown, even black and the eggplant is soft when you touch it.",
+            "3": "Soak the grilled eggplant in a bowl of water to cool it down. Peel the skin off the eggplant.Place the whole eggplants in a shallow dish (my mom actually cuts the eggplant into small, bite-sized pieces).",
+            "4": "In a small mixing bowl, mix together the coconut milk or cream, lemon powder, salt and hot pepper. Mix until the lemon powder and salt dissolve. Taste, then adjust the amount of lemon powder, salt and hot pepper to your liking. Pour the mixture over the eggplant. Sprinkle the green onions over the eggplant and coconut milk. Stir gently to combine."
+        }
+    },
+    {   "id":2, 
+        "title": "Eggplant Adobo", 
+        "Ingredients": "1 lb Egg Plants, 2 tbs Sugar, 1 tsp Salt, 1 tsp Pepper, 1 whole Garlic, 3 tbs Olive Oil, 4 oz Ground Pork, 3 tbs Rice Vinegar, 2 tbs Soy Sauce, 2 Bay Leaf", 
+        "more": {
+            "1": "Peel and thinly slice 8 garlic cloves. Add 3 Tbsp. vegetable oil and half of garlic to a medium Dutch oven or other heavy pot. Cook over medium-high heat, stirring constantly with a wooden spoon, until light golden and crisp, about 5 minutes. Using a slotted spoon, transfer garlic chips to a plate; season lightly with salt.",
+            "2": "Place 4 oz.ground pork in same pot and break up into small pieces with wooden spoon. Season with ¼ tsp.Diamond Crystal or Morton kosher salt and cook, undisturbed, until deeply browned underneath, about 5 minutes. Using a slotted spoon, transfer to another plate, leaving fat behind in the pot.",
+            "3": "Place eggplant on a clean kitchen towel and blot away any moisture the salt has drawn out.",
+            "4": "Working in batches and adding more oil if needed, cook eggplant in the same pot until lightly browned, about 3 minutes per side. Transfer to a plate with pork.",
+            "5": "Pour 1½ cups of water into the pot and scrape up browned bits from the bottom with a wooden spoon. Add remaining garlic, 3 Tbsp. coconut vinegar or unseasoned rice vinegar, 2 Tbsp. soy sauce, 2 bay leaves, 1 tsp. freshly ground black pepper, and remaining 1 Tbsp. sugar. Bring to a simmer, then return pork and eggplant to pot. Reduce heat to medium-low, partially cover, and simmer until eggplant is tender and silky and sauce is reduced by half, 20–25 minutes.Taste and season with more salt and pepper and add a little more sugar if needed.",
+            "6": "Top with garlic chips and serve with cooked white rice."
+        }
+    },
+        {"id":3, 
+        "title": "Christmas Pudding Trifle", 
+        "Ingredients": "3 Orange, 1 tbs Demerara Sugar, 2 tbs Grand Marnier, 300g Christmas Pudding, 500g Custard, 250g Mascarpone, 284ml Double Cream, Handful Flaked ,Almonds, Grated Dark Chocolate", 
+        "more": {
+            "1": "Peel the oranges using a sharp knife, ensuring all the pith is removed. Slice as thinly as possible and arrange over a dinner plate. Sprinkle with the demerara sugar followed by the Grand Marnier and set aside. Crumble the Christmas pudding into large pieces and scatter over the bottom of a trifle bowl. Lift the oranges onto the pudding in a layer and pour over any juices. Beat the mascarpone until smooth, then stir in the custard. Spoon the mixture over the top of the oranges. Lightly whip the cream and spoon over the custard. Sprinkle with the flaked almonds and grated chocolate. You can make this a day in advance if you like, chill until ready to serve."
+        }
+    },
+    {
+        "id":4, 
+        "title": "Pilchard puttanesca", 
+        "Ingredients": "300g Spaghetti, 1 tbls Olive Oil, 1 finely chopped Onion, 2 cloves minced Garlic, 1 Red Chilli, 1 tbls Tomato Puree, 425g Pilchards, 70g Black Olives, Shaved Parmesan", 
+        "more": {
+            "1": "Cook the pasta following pack instructions. Heat the oil in a non-stick frying pan and cook the onion, garlic and chilli for 3-4 mins to soften. Stir in the tomato purée and cook for 1 min, then add the pilchards with their sauce. Cook, breaking up the fish with a wooden spoon, then add the olives and continue to cook for a few more mins.",
+            "2": "Drain the pasta and add to the pan with 2-3 tbsp of the cooking water.Toss everything together well, then divide between plates and serve, scattered with Parmesan."
+        }
+    },
+    {
+        "id":5, 
+        "title": "Beef stroganoff", 
+        "Ingredients": "1 tbls Olive Oil, 1 Onions, 1 clove Garlic, 1 tbsp Butter, 250g Mushrooms, 500g Beef Fillet, 1tbsp Plain Flour, 150g Creme Fraiche, 1 tbsp English Mustard, 100ml Beef Stock, Topping Parsley", 
+        "more": {
+            "1": "Heat the olive oil in a non-stick frying pan then add the sliced onion and cook on a medium heat until completely softened, so around 15 mins, adding a little splash of water if they start to stick at all. Crush in the garlic and cook for a 2-3 mins further, then add the butter. Once the butter is foaming a little, add the mushrooms and cook for around 5 mins until completely softened. Season everything well, then tip onto a plate.",
+            "2": "Tip the flour into a bowl with a big pinch of salt and pepper, then toss the steak in the seasoned flour. Add the steak pieces to the pan, splashing in a little oil if the pan looks particularly dry, and fry for 3-4 mins, until well coloured.",
+            "3": "Tip the onions and mushrooms back into the pan. Whisk the crème fraîche, mustard and beef stock together, then pour into the pan. Cook over a medium heat for around 5 mins. Scatter with parsley, then serve with pappardelle or rice."
+        } 
+    },
+
+    {
+        "id":6, 
+        "title": "Split Pea Soup", 
+        "Ingredients": "1kg Ham, 200g (soaked overnight) Peas, 2 chopped Onions, 2 chopped Carrots, 2 Bay Leaves, 1 chopped Celery, 300g Frozen Peas to serve Bread", 
+        "more": {
+            "1": "Put the gammon in a very large pan with 2 litres water and bring to the boil. Put the gammon in a very large pan with 2 litres water and bring to the boil. Put the gammon in a very large pan with 2 litres water and bring to the boil. Put everything but the frozen peas into the pan and bring to the boil. Reduce to a simmer and cook for 1½-2½ hrs, topping up the water as and when you need to, to a similar level it started at.",
+            "2": "As the ham cooks and softens, you can halve it if you want, so it is all submerged under the liquid. As the ham cooks and softens, you can halve it if you want, so it is all submerged under the liquid. As the ham cooks and softens, you can halve it if you want, so it is all submerged under the liquid. As the ham cooks and softens, you can halve it if you want, so it is all submerged under the liquid. Remove bay from the soup and stir in the frozen peas.",
+            "3": "Remove bay from the soup and stir in the frozen peas. Add a splash of water if too thick, and return to the pan to heat through if it has cooled, or if you are making ahead. When you are ready to serve, mix the hot soup with most of the ham – gently reheat if made ahead. Serve in bowls with the remaining ham scattered on top, and eat with crusty bread and butter."
+        } 
+    },
+    {
+        "id":7, 
+        "title": "Beef Dumpling Stew", 
+        "Ingredients": "2 tbs Olive Oil, 25g Butter, 750g Beef, 2 tblsp Plain Flour, 2 cloves minced Garlic, 175g Onions, 150g Celery, 150g Carrots, 2 chopped Leek, 200g Swede, 150ml Red Wine, 500g Beef Stock, 2 Bay Leaf, 3 tbs Thyme, 3 tblsp chopped Parsley", 
+        "more": {
+            "1": "Preheat the oven to 180C/350F/Gas 4. For the beef stew, heat the oil and butter in an ovenproof casserole and fry the beef until browned on all sides. Sprinkle over the flour and cook for a further 2-3 minutes. Add the garlic and all the vegetables and fry for 1-2 minutes. Add the garlic and all the vegetables and fry for 1-2 minutes. ",
+            "2": "Add the garlic and all the vegetables and fry for 1-2 minutes. Cover with a lid, transfer to the oven and cook for about two hours, or until the meat is tender. Cover with a lid, transfer to the oven and cook for about two hours, or until the meat is tender. Cover with a lid, transfer to the oven and cook for about two hours, or until the meat is tender.",
+            "3": "With floured hands, roll spoonfuls of the dough into small balls. With floured hands, roll spoonfuls of the dough into small balls. Cover, return to the oven and cook for a further 20 minutes, or until the dumplings have swollen and are tender. Sprinkle with chopped parsley."
+        } 
+    },
+    {
+        "id":8, 
+        "title": "Key Lime Pie", 
+        "Ingredients": "300g Digestive Biscuits, 150g Butter, 400g Condensed Milk, 3 Egg Yolks, 4 Lime, 300ml Double Cream, 1 tbls Icing Sugar, to serve Lime", 
+        "more": {
+            "1": "Heat the oven to 160C/fan 140C/gas 3. Heat the oven to 160C/fan 140C/gas 3. Heat the oven to 160C/fan 140C/gas 3. Heat the oven to 160C/fan 140C/gas 3. Heat the oven to 160C/fan 140C/gas 3.",
+            "2": "Heat the oven to 160C/fan 140C/gas 3. Heat the oven to 160C/fan 140C/gas 3. Heat the oven to 160C/fan 140C/gas 3. Heat the oven to 160C/fan 140C/gas 3. Heat the oven to 160C/fan 140C/gas 3. To decorate, softly whip together the cream and icing sugar. Dollop or pipe the cream onto the top of the pie and finish with extra lime zest."
+        } 
+    },
+    {
+        "id":9, 
+        "title": "Keleya Zaara", 
+        "Ingredients": "4 tbs Olive Oil, 750g Lamb, 1 1/2 tsp Saffron, 1 Large Chopped Onion, 25 ml Water, 30g Parsley, 1 tbs Butter, 1 Lemon", 
+        "more": {
+            "1": "Heat the vegetable oil in a large frying pan over medium-high heat. Heat the vegetable oil in a large frying pan over medium-high heat. Heat the vegetable oil in a large frying pan over medium-high heat. Bring to the boil, then cover, reduce heat to medium-low, and simmer until the lamb is tender, about 15 minutes.",
+            "2": "Uncover the pan, stir in the butter and allow the sauce reduce 5 to 10 minutes to desired consistency. Season to taste with salt and pepper, then pour into a serving dish. Sprinkle with the remaining chopped onions and parsley. Garnish with lemon wedges to serve."
+        } 
+    },
+    {
+        "id":10, 
+        "title": "Honey Teriyaki Salmon", 
+        "Ingredients": "1 lb Salmon, 1 tablespoon Olive oil, 2 tablespoons Soy Sauce, 2 tablespoons Sake, 4 tablespoons Sesame Seed", 
+        "more": {
+            "1": "Mix all the ingredients in the Honey Teriyaki Glaze together. Whisk to blend well. Combine the salmon and the Glaze together. Combine the salmon and the Glaze together. Combine the salmon and the Glaze together. Combine the salmon and the Glaze together."
+        } 
+    },
+    {
+        "id":11, 
+        "title": "Rosół (Polish Chicken Soup)", 
+        "Ingredients": "4 Chopped Chicken Legs, 2 large Onions, 5 chopped Carrots, 1 chopped Leek, 1 small Celery, 1/4 Cabbage, 1 whole Cloves, 1tsp Allspice, 2 Bay Leaf, 4 sprigs Parsley, 4 sprigs Dill, 1 tsp Pepper, 1 tbs Salt", 
+        "more": {
+            "1": "Add chicken to a large Dutch oven or stock pot Cover with water Bring to a boil and simmer for 2 to 2 1/2 hours, skimming any impurities off the top to insure a clear broth If your pot is big enough, add the vegetables and spices for the last hour of the cooking time My Dutch oven wasn’t big enough to hold everything, just the chicken and other bones filled the pot, so I cooked the meat/bones for the full cooking time, then removed them, and cooked the vegetables and spices separately Strain everything out of the broth Bone the chicken, pulling the meat into large chunks Slice the carrots Return the chicken and carrots to the broth Cook noodles according to package instructions if you’re using them Add noodles to bowl and then top with hot soup"
+        }
+    },
+    {
+        "id":12, 
+        "title": "Chocolate Gateau", 
+        "Ingredients": "250g Plain chocolate, 175g Butter, 2 tablespoons Milk, 5 Eggs, 175g Granulated Sugar, 125g Flour", 
+        "more": {
+            "1": "Preheat the oven to 180°C/350°F/Gas Mark 4. Grease and line the base of an 8 in round spring form cake tin with baking parchment Break the chocolate into a heatproof bowl and place over a saucepan of gently simmering water and stir until it melts. (or melt in the microwave for 2-3 mins stirring occasionally) Place the butter and sugar in a mixing bowl and cream together with a wooden spoon until light and fluffy.",
+            "2": "Gradually beat in the eggs, adding a little flour if the mixture begins to curdle. Fold in the remaining flour with the cooled, melted chocolate and milk. Mix until smooth. Spread the mixture into the cake tin and bake for 50-55 mins or until firm in the centre and a skewer comes out cleanly. Cool for 10 minutes, then turn out and cool completely."
+        } 
+    }
     ]
 }

@@ -2,16 +2,16 @@
     <form @submit.prevent>
         <h4>Создание поста</h4>       
         <my-input 
-            v-model="post.title"
+            v-model="meals.title"
             type="text" 
             placeholder="Название">
         </my-input>
         <my-input 
-            v-model="post.body"
+            v-model="meals.body"
             type="text" 
             placeholder="Описание">
         </my-input>
-        <my-button class="postBtn" @click="createPost"> Создать</my-button>    
+        <my-button class="mealsBtn" @click="createMeals"> Создать</my-button>    
     </form>
 </template>
 
@@ -20,19 +20,19 @@
     export default {
         data() {
             return {
-                post: {
+                meals: {
                     title: '',
-                    body: ''
+                    ingredients: ''
                 }
             }
         },
         methods: {
-            createPost() {
-                this.post.id = Date.now();
-                this.$emit('create', this.post);
-                this.post = {
+            createMeals() {
+                this.meals.id = Date.now();
+                this.$emit('create', this.meals);
+                this.meals = {
                     title: '',
-                    body: ''
+                    ingredients: ''
                 }
             }
         },
@@ -45,7 +45,7 @@
         flex-direction: column;
     }
 
-    .postBtn {
+    .mealsBtn {
         align-self: flex-end;
         margin-top: 15px;
         margin-right: 17px;

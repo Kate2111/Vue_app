@@ -19,7 +19,6 @@ export default{
 
 <style scoped>
 .postInput {
-    width: 100%;
     border: 1px solid green;
     margin-top: 15px;
     padding: 10px 15px;

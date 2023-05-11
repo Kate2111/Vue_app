@@ -1,9 +1,10 @@
 import { createApp } from 'vue';
 import App from './App';
-import components from '@/components/post/UI';
+import components from '@/components/meal/UI';
 import tasks from '@/components/practice/Task';
-import axios from 'axios'
-import VueAxios from 'vue-axios'
+import axios from 'axios';
+import VueAxios from 'vue-axios';
+import router from '@/router/router';
 
 
 const app = createApp(App);
@@ -19,4 +20,5 @@ tasks.forEach(task => {
 });
 
 
+app.use(router);
 app.mount('#app');

@@ -1,17 +1,17 @@
 <template>
     <div class="wrapper">
-        <div v-if="posts.length > 0">
+        <div v-if="meals.length > 0">
             <h3>Список постов</h3>
             
             <!-- transition-group - встроенный тег для анимации списков -->
             <transition-group name="list">
-                <post-item
-                v-for="post in posts"
-                :post="post"
-                @remove="$emit('remove', post)" 
-                :key="post.id"
+                <meal-item
+                v-for="meal in meals"
+                :meal="meal"
+                @remove="$emit('remove', meal)" 
+                :key="meal.id"
                 />
-                <!--  @remove="$emit('remove', post)" т.к. posts передан в качестве пропса, изменять мы его не можем, поэтому так же передаем вверх родителю -->
+                <!--  @remove="$emit('remove', meal)" т.к. meals передан в качестве пропса, изменять мы его не можем, поэтому так же передаем вверх родителю -->
             </transition-group>
             
         </div>
@@ -21,12 +21,12 @@
 </template>
 
 <script>
-    import postItem from './PostItem.vue';
+    import mealItem from './MealItem.vue';
 
     export default {
-        components: {postItem},
+        components: {mealItem},
         props: {
-            posts: {
+          meals: {
                 type: Array,
                 required: true
             }
