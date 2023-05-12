@@ -1,14 +1,14 @@
 <template>
     <div class="meals">
         <div>
-            <div><strong>Название:</strong> {{ meals.title }}</div>
-            <div><strong>Описание:</strong> {{ meals.ingredients }}</div>
+            <div><strong>Название:</strong> {{ meal.title }}</div>
+            <div><strong>Описание:</strong> {{ meal.ingredients }}</div>
         </div>
         <div class="box-button">
-            <my-button @click="$router.push(`/meals/${meals.id}`)">
+            <my-button @click="$router.push(`/meals/${meal.id}`)">
                 открыть
             </my-button>
-            <my-button @click="$emit('remove', meals)"> <!-- передаем вверх родителю конкретный meals, на который совершен клик -->
+            <my-button @click="$emit('remove', meal)"> <!-- передаем вверх родителю конкретный meals, на который совершен клик -->
                 удалить
             </my-button>
         </div>
@@ -18,7 +18,7 @@
 <script>
     export default {
         props: {
-            meals: {
+            meal: {
                 type: Object,
                 required: true
             }

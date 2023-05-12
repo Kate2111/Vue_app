@@ -91,7 +91,7 @@
             async featchMeals() {
                 this.isLoading = true;
                 try{
-                    const response = await axios.get('https://my-json-server.typicode.com/Kate2111/Vue_app/meals', {
+                    const response = await axios.get('https://my-json-server.typicode.com/Kate2111/Vue_app/posts', {
                         params:{
                             _page: this.page,
                             _limit: this.limit
