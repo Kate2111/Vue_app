@@ -6,19 +6,19 @@ import {createRouter, createWebHistory} from "vue-router";
 
 const routes = [
     {
-        path: '/',
+        path: '/Vue-app/',
         component: Main,
     },
     {
-        path: '/task',
+        path: '/Vue-app/task',
         component: TaskPage,
     },
     {
-        path: '/meal',
+        path: '/Vue-app/meal',
         component: MealPage,
     },
     {
-        path: '/meal/:id',
+        path: '/Vue-app/meal/:id',
         component: MealPageID,
     },
 ]

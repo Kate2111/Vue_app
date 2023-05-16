@@ -4,6 +4,5 @@ module.exports = defineConfig({
 })
 
 module.exports = {
-  publicPath:
-  '/Vue-app/'
+  publicPath: '/Vue-app'
 }

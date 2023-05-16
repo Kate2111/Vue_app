@@ -5,7 +5,7 @@
             <div><strong>Ингридиенты:</strong> {{ meal.Ingredients }}</div>
         </div>
         <div class="box-button">
-            <my-button @click="$router.push(`/meal/${meal.id}`)">
+            <my-button @click="$router.push(`/Vue-app/meal/${meal.id}`)">
                 открыть
             </my-button>
             <my-button @click="$emit('remove', meal)"> <!-- передаем вверх родителю конкретный meals, на который совершен клик -->
