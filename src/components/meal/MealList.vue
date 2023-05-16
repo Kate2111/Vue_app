@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <div v-if="meals.length > 0">
-            <h3>Список постов</h3>
+            <h3>Список рецептов</h3>
             
             <!-- transition-group - встроенный тег для анимации списков -->
             <transition-group name="list">
@@ -29,7 +29,7 @@
           meals: {
                 type: Array,
                 required: true
-            }
+          }
         }
     }
 </script>

@@ -1,6 +1,6 @@
 <template>
     <div style="padding: 15px">
-        <h1>Список постов</h1>
+        <h1>Список рецептов</h1>
         <my-input
             v-model="searchQuery"
             placeholder="поиск...">
@@ -8,7 +8,7 @@
         </my-input>
         <div class="menu">
             <my-button class="showBtn" @click="showDialog">
-                Создать пост
+                Создать рецепт
             </my-button>
             <my-select 
                 v-model="selectedSort"
@@ -70,7 +70,7 @@
                 totalPages: 0,
                 sortOption: [
                     {value: 'title', name: 'По названию'},
-                    {value: 'ingredients', name: 'По индигриентам'},
+                    {value: 'Ingredients', name: 'По индигриентам'},
                 ]
             }
         }, 
@@ -91,7 +91,7 @@
             async featchMeals() {
                 this.isLoading = true;
                 try{
-                    const response = await axios.get('https://my-json-server.typicode.com/Kate2111/Vue_app/posts', {
+                    const response = await axios.get('https://my-json-server.typicode.com/Kate2111/Vue_app/meals', {
                         params:{
                             _page: this.page,
                             _limit: this.limit

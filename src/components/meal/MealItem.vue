@@ -2,10 +2,10 @@
     <div class="meals">
         <div>
             <div><strong>Название:</strong> {{ meal.title }}</div>
-            <div><strong>Описание:</strong> {{ meal.ingredients }}</div>
+            <div><strong>Ингридиенты:</strong> {{ meal.Ingredients }}</div>
         </div>
         <div class="box-button">
-            <my-button @click="$router.push(`/meals/${meal.id}`)">
+            <my-button @click="$router.push(`/meal/${meal.id}`)">
                 открыть
             </my-button>
             <my-button @click="$emit('remove', meal)"> <!-- передаем вверх родителю конкретный meals, на который совершен клик -->

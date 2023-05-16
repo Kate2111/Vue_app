@@ -1,6 +1,6 @@
 <template>
     <form @submit.prevent>
-        <h4>Создание поста</h4>       
+        <h4>Создание рецепта</h4>       
         <my-input 
             v-model="meals.title"
             type="text" 
@@ -22,7 +22,7 @@
             return {
                 meals: {
                     title: '',
-                    ingredients: ''
+                    Ingredients: ''
                 }
             }
         },
@@ -32,7 +32,7 @@
                 this.$emit('create', this.meals);
                 this.meals = {
                     title: '',
-                    ingredients: ''
+                    Ingredients: ''
                 }
             }
         },

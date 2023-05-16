@@ -1,16 +1,17 @@
 <template>
     <div>
         <div class="container">
-            <h3>{{$route.params.title}}</h3>
-            <p>{{$route.params.includes}}</p>
-            <p>{{$route.params.more}}</p>
+            <h3>{{$route.params.id}}</h3>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    setup () {
+    props: {
+
+    },
+    data () {
         
 
         return {}
@@ -19,5 +20,8 @@ export default {
 </script>
 
 <style>
-
+    .container{
+        margin: 0 auto;
+        width: 1100px;
+    }
 </style>
